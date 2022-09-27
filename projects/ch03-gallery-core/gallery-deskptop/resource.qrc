@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/add.png</file>
+        <file>resources/left.png</file>
+        <file>resources/remove.png</file>
+        <file>resources/right.png</file>
+        <file>resources/tune.png</file>
+    </qresource>
+</RCC>
