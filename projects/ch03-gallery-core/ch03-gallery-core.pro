@@ -2,6 +2,9 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     gallery-core \
-    gallery-deskptop
+    gallery-mobile
+    #gallery-deskptop
 
-gallery-deskptop.depends = gallery-core
+
+#gallery-deskptop.depends = gallery-core
+gallery-mobile.depends = gallery-core

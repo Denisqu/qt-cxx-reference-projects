@@ -25,6 +25,12 @@ PictureModel::addPicture(const Picture& picture)
   return index(rows, 0);
 }
 
+void
+PictureModel::addPictureFromUrl(const QUrl& fileUrl)
+{
+  addPicture(Picture(fileUrl));
+}
+
 int
 PictureModel::rowCount(const QModelIndex& parent) const
 {
@@ -76,6 +82,16 @@ PictureModel::removeRows(int row, int count, const QModelIndex& parent)
   endRemoveRows();
 
   return true;
+}
+
+QHash<int, QByteArray>
+PictureModel::roleNames() const
+{
+  QHash<int, QByteArray> roles;
+  roles[Qt::DisplayRole] = "name";
+  roles[Roles::FilePathRole] = "filepath";
+  roles[Roles::UrlRole] = "url";
+  return roles;
 }
 
 void
