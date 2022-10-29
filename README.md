@@ -8,3 +8,4 @@
    ![ch02-sysinfo img](/images/gallery-desktop.png)
 4. [gallery-mobile](projects\ch03-gallery-core\gallery-mobile) (gui на QML, основанный на StackView)
    ![gallery-mobile img](images/gallery-mobile.png)
+5. Многопоточное приложение (в разработке)
